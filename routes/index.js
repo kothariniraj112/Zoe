@@ -10,7 +10,7 @@ const $ = cheerio.load('<h2 class="title">Hello world</h2>')
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-  request('https://goo.gl/forms/xJjb5uIvqBDGUv4P2', function (error, response, body) {
+  request('https://docs.google.com/forms/d/e/1FAIpQLSfhMHWcSzK-0f_7kRq0bVi4t9vIaLU9Bo4IZYB2duLNOiPopw/viewform?usp=sf_link', function (error, response, body) {
     console.log('error:', error); // Print the error if one occurred
     // res.send('statusCode:', response && response.statusCode); // Print the response status code if a response was received
     // res.send({body:body}); // Print the HTML for the Google homepage.
